@@ -36,14 +36,13 @@ export function Hero() {
                         <div className="order-2 lg:order-1">
                             <ScrollReveal direction="up" delay={0.2}>
                                 <Typography variant="display" className="mb-8 md:mb-10">
-                                    売れるLP を、<br />
-                                    <span className="text-navy-800">AI で。</span>
+                                    売れるLPをAIで<br />
+                                    早く、安く、何度でも。
                                 </Typography>
                             </ScrollReveal>
 
                             <ScrollReveal direction="up" delay={0.4}>
                                 <Typography variant="h4" className="text-navy-900/70 leading-relaxed mb-10">
-                                    速く・安く・何度でも。<br />
                                     成果検証まで見据えた次世代ランディングページ制作サービス
                                 </Typography>
                             </ScrollReveal>
