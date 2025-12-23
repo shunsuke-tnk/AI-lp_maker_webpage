@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 250 250 250; /* #FAFAFA */
+    --foreground: 45 64 89; /* #2D4059 */
+  }
+
+  body {
+    background-color: var(--paper);
+    color: theme('colors.navy.900');
+    font-feature-settings: "palt";
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
