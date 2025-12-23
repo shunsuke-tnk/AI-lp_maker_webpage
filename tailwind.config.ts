@@ -18,7 +18,7 @@ const config: Config = {
                 highlight: '#F2F4F6', // Background Highlight
             },
             fontFamily: {
-                sans: ['var(--font-zen-maru)', 'var(--font-noto-sans)', 'sans-serif'],
+                sans: ['var(--font-noto-sans)', 'sans-serif'],
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
