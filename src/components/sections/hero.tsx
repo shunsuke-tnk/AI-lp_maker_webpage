@@ -36,8 +36,8 @@ export function Hero() {
                         <div className="order-2 lg:order-1">
                             <ScrollReveal direction="up" delay={0.2}>
                                 <Typography variant="display" className="mb-8 md:mb-10">
-                                    売れるLPをAIで<br />
-                                    早く、安く、何度でも。
+                                    売れるLPを<span className="text-navy-800">AI</span>で<br />
+                                    <span className="text-navy-800">早く、安く、何度でも。</span>
                                 </Typography>
                             </ScrollReveal>
 
