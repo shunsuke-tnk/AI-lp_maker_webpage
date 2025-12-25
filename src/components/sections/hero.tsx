@@ -11,35 +11,37 @@ export function Hero() {
                 <div className="absolute inset-0 bg-grid-pattern bg-grid" />
             </div>
 
-            {/* Background "AI" watermark - very large, very subtle */}
+            {/* Background "AI" watermark - extremely subtle */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-                <div className="text-[25vw] md:text-[30vw] font-black text-structure-grid/15 leading-none select-none whitespace-nowrap">
+                <div className="text-[25vw] md:text-[30vw] font-black leading-none select-none whitespace-nowrap opacity-[0.03]" style={{ color: '#E5E5E5' }}>
                     AI
                 </div>
             </div>
 
             {/* Main Content */}
-            <div className="relative z-10 w-full h-full flex flex-col items-center justify-center px-4 md:px-8">
-                {/* Main Title - 2行シンプル */}
-                <div className="text-center mb-12 md:mb-16">
-                    <h1 className="font-black leading-[0.85] tracking-tighter text-charcoal-black">
-                        <div className="text-[15vw] md:text-[12vw] lg:text-[10vw]">
-                            売れる<span className="inline-block bg-charcoal-black text-neon-yellow px-[0.2em]">LP</span>を、
-                        </div>
-                        <div className="text-[15vw] md:text-[12vw] lg:text-[10vw]">
-                            何度でも。
-                        </div>
-                    </h1>
-                </div>
+            <div className="relative z-10 w-full h-full flex items-center px-4 md:px-8 lg:px-16">
+                <div className="w-full max-w-7xl mx-auto">
+                    {/* Main Title - 2行、左寄せ、黒と黄色の2色使い */}
+                    <div className="mb-12 md:mb-16">
+                        <h1 className="font-black leading-[0.85] tracking-tighter text-charcoal-black">
+                            <div className="text-[15vw] md:text-[12vw] lg:text-[10vw]">
+                                売れる<span className="inline-block px-[0.2em] py-[0.05em]" style={{ backgroundColor: '#222222', color: '#FFFF00' }}>LP</span>を、
+                            </div>
+                            <div className="text-[15vw] md:text-[12vw] lg:text-[10vw]">
+                                何度でも。
+                            </div>
+                        </h1>
+                    </div>
 
-                {/* CTAs */}
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <Button size="lg">
-                        無料で試してみる
-                    </Button>
-                    <Button variant="secondary" size="lg">
-                        お問い合わせ
-                    </Button>
+                    {/* CTAs - 左寄せ */}
+                    <div className="flex flex-col sm:flex-row items-start gap-4">
+                        <Button size="lg">
+                            無料で試してみる
+                        </Button>
+                        <Button variant="secondary" size="lg">
+                            お問い合わせ
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>

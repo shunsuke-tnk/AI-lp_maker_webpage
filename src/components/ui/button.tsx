@@ -13,7 +13,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
         const variants = {
             // Primary: Neon yellow with black text - THE accent color
-            primary: "bg-neon-yellow text-charcoal-black border-2 border-charcoal-black hover:bg-charcoal-black hover:text-neon-yellow",
+            primary: "border-2 border-charcoal-black hover:bg-charcoal-black hover:text-neon-yellow",
             // Secondary: Black border, minimal
             secondary: "bg-pure-white border-2 border-charcoal-black text-charcoal-black hover:bg-charcoal-black hover:text-pure-white",
             // Ghost: Minimal, text only
@@ -30,6 +30,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         return (
             <button
                 className={cn(baseStyles, variants[variant], sizes[size], className)}
+                style={variant === "primary" ? { backgroundColor: '#FFFF00', color: '#222222' } : undefined}
                 ref={ref}
                 {...props}
             />
