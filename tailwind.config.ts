@@ -9,21 +9,30 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
+                // Isometric Design System - "The Rule of 3 + 1 Highlight"
+                'pure-white': '#FFFFFF',
+                'pure-offwhite': '#F9F9F9',
+                'charcoal-black': '#222222',
+                'structure-grid': '#E5E5E5',
+                'neon-yellow': '#FFFF00',
+                // Legacy colors
                 navy: {
-                    900: '#2D4059', // Primary Text / Accent
-                    800: '#4A6C96', // Link / CTA
+                    900: '#222222',
+                    800: '#222222',
                 },
-                paper: '#FAFAFA', // Background Base
-                accent: '#708198', // Secondary Accent
-                highlight: '#F2F4F6', // Background Highlight
+                paper: '#FFFFFF',
+                accent: '#222222',
+                highlight: '#F9F9F9',
             },
             fontFamily: {
                 sans: ['var(--font-noto-sans)', 'sans-serif'],
             },
             backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+                // Minimal system - avoid gradients
+                "grid-pattern": "linear-gradient(#E5E5E5 1px, transparent 1px), linear-gradient(90deg, #E5E5E5 1px, transparent 1px)",
+            },
+            backgroundSize: {
+                "grid": "20px 20px",
             },
         },
     },

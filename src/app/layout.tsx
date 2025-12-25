@@ -3,10 +3,11 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
+// Isometric Design System - Need BLACK (900) weight for massive headings
 const notoSans = Noto_Sans_JP({
     subsets: ["latin"],
     variable: "--font-noto-sans",
-    weight: ["400", "500", "700", "900"],
+    weight: ["400", "900"], // Only Regular and Black - extreme contrast
     display: "swap",
 });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
         <html lang="ja">
             <body className={cn(
                 notoSans.variable,
-                "font-sans antialiased bg-paper text-navy-900"
+                "font-sans antialiased bg-pure-white text-charcoal-black"
             )}>
                 {children}
             </body>

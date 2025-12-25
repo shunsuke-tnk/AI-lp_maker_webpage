@@ -16,10 +16,10 @@ export function Card({
     return (
         <div
             className={cn(
-                'bg-white rounded-2xl md:rounded-3xl p-6 md:p-8', // Soft rounding
-                'shadow-[0_20px_40px_-10px_rgba(45,64,89,0.05)]', // Diffuse soft shadow
-                'border border-navy-900/5',
-                hoverEffect && 'transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(45,64,89,0.1)]',
+                // Isometric Design System - No rounded corners, no shadows, sharp edges
+                'bg-pure-white p-6 md:p-8',
+                'border-2 border-charcoal-black',
+                hoverEffect && 'transition-all duration-200 hover:border-neon-yellow hover:bg-pure-offwhite',
                 className
             )}
             {...props}

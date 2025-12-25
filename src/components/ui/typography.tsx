@@ -11,15 +11,18 @@ interface TypographyProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const variantStyles: Record<Variant, string> = {
-    display: "font-sans text-6xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[1.1] text-navy-900",
-    h1: "font-sans text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[1.2] text-navy-900",
-    h2: "font-sans text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.2] text-navy-900",
-    h3: "font-sans text-3xl md:text-4xl lg:text-5xl font-black tracking-tight text-navy-900",
-    h4: "font-sans text-2xl md:text-3xl lg:text-4xl font-black tracking-normal text-navy-900",
-    h5: "font-sans text-xl md:text-2xl lg:text-3xl font-black tracking-normal text-navy-900",
-    h6: "font-sans text-lg md:text-xl font-black tracking-normal text-navy-900",
-    body: "font-sans text-base md:text-lg leading-loose text-navy-900/90",
-    small: "font-sans text-sm leading-relaxed text-navy-900/80",
+    // Isometric Design System Typography
+    // Massive headings with Extra Bold (Black/900), extreme size contrast (10:1+ jump rate)
+    display: "font-sans text-7xl md:text-9xl lg:text-[12rem] font-black tracking-tighter leading-[0.9] text-charcoal-black",
+    h1: "font-sans text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.95] text-charcoal-black",
+    h2: "font-sans text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.0] text-charcoal-black",
+    h3: "font-sans text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-charcoal-black",
+    h4: "font-sans text-3xl md:text-5xl lg:text-6xl font-black tracking-tight text-charcoal-black",
+    h5: "font-sans text-2xl md:text-4xl lg:text-5xl font-black tracking-tight text-charcoal-black",
+    h6: "font-sans text-xl md:text-3xl lg:text-4xl font-black tracking-tight text-charcoal-black",
+    // Small body text with regular weight - extreme contrast with headings
+    body: "font-sans text-sm md:text-base leading-relaxed text-charcoal-black",
+    small: "font-sans text-xs md:text-sm leading-relaxed text-charcoal-black/70",
 };
 
 export function Typography({

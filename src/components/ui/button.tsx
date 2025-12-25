@@ -8,18 +8,22 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ({ className, variant = "primary", size = "default", ...props }, ref) => {
-        const baseStyles = "inline-flex items-center justify-center rounded-full font-medium transition-transform duration-200 hover:-translate-y-1 active:translate-y-0 disabled:opacity-50 disabled:pointer-events-none"
+        // Isometric Design System - No shadows, no rounded corners, sharp edges
+        const baseStyles = "inline-flex items-center justify-center font-black transition-all duration-150 disabled:opacity-50 disabled:pointer-events-none uppercase tracking-wide"
 
         const variants = {
-            primary: "bg-navy-900 text-white shadow-md hover:bg-navy-900/90 hover:shadow-lg",
-            secondary: "bg-transparent border border-navy-900 text-navy-900 hover:bg-navy-900/5",
-            ghost: "bg-transparent text-navy-900 hover:bg-navy-900/5",
+            // Primary: Neon yellow with black text - THE accent color
+            primary: "bg-neon-yellow text-charcoal-black border-2 border-charcoal-black hover:bg-charcoal-black hover:text-neon-yellow",
+            // Secondary: Black border, minimal
+            secondary: "bg-pure-white border-2 border-charcoal-black text-charcoal-black hover:bg-charcoal-black hover:text-pure-white",
+            // Ghost: Minimal, text only
+            ghost: "bg-transparent text-charcoal-black hover:bg-structure-grid",
         }
 
         const sizes = {
-            default: "h-11 px-8 py-2 text-sm",
+            default: "h-11 px-8 py-2 text-xs",
             sm: "h-9 px-4 text-xs",
-            lg: "h-14 px-10 text-base",
+            lg: "h-14 px-10 text-sm",
             icon: "h-10 w-10",
         }
 
